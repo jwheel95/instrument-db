@@ -2,7 +2,6 @@
   <div class="inst" *ngFor="let instrument of instruments">
     <img src="{{ instrument.image }}">
     <h2>{{ instrument.name }}</h2>
-    <p>Family: {{ instrument.family }}</p>
-    <p>Developed/Invented: {{ instrument.invented }}</p>
+    <a routerLink="/instrument/{{ instrument.name }}">Details</a>
   </div>
 </div>
