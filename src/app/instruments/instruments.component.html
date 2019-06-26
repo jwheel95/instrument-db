@@ -1,0 +1,8 @@
+<div class="instruments">
+  <div *ngFor="let instrument of instruments">
+    <img src="{{ instrument.image }}">
+    <h2>{{ instrument.name }}</h2>
+    <p>Family: {{ instrument.family }}</p>
+    <p>Developed/Invented: {{ instrument.invented }}</p>
+  </div>
+</div>
