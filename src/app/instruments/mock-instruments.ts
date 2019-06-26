@@ -15,8 +15,8 @@ export const INSTRUMENTS: InstrumentInterface[] = [
     },
     {
         name: 'Trumpet',
-        image: 'https://www.scmusic.com.au/content/uploads/2015/04/YAMAHA-fg650-acoustic-guitar-best-value-south-coast-music-11.jpg',
+        image: 'https://az58332.vo.msecnd.net/e88dd2e9fff747f090c792316c22131c/Images/Products1734-1200x1200-1484268.jpg',
         family: 'brass',
         invented: '1500 BC (earliest forms)'
     },
-]
+];

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { InstrumentInterface } from '../interfaces/instrument-interface';
+import { INSTRUMENTS } from '../instruments/mock-instruments';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -10,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class InstrumentsComponent implements OnInit {
 
-  instruments: InstrumentInterface[];
+  instruments: InstrumentInterface[] = INSTRUMENTS;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
