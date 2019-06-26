@@ -1,0 +1,19 @@
+.instruments {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.inst {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
