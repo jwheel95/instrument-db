@@ -1,4 +1,5 @@
-<a routerLink="/instruments">All Instruments</a>
+<a routerLink="/instruments"><-- All Instruments</a>
+<a routerLink="/instruments" [queryParams]="{ family : instrument.family }"><-- Instruments in this Family</a>
 <div class="individual-inst">
     <div class="inst-column inst-image">
         <img src="{{ instrument.image }}" class="inst-image">

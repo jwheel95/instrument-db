@@ -12,3 +12,7 @@
     height: 40em;
     width: 40em;
 }
+
+a {
+    padding: 0 15px;
+}
