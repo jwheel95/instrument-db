@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { InstrumentInterface } from '../interfaces/instrument-interface';
 import { INSTRUMENTS } from '../instruments/mock-instruments';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-instruments',
@@ -13,9 +13,23 @@ export class InstrumentsComponent implements OnInit {
 
   instruments: InstrumentInterface[] = INSTRUMENTS;
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  family: string | boolean;
+
+  renderInstruments() {
+    this.family = this.route.snapshot.queryParamMap.get("family");
+    if (this.family) {
+      this.instruments = INSTRUMENTS.filter(instrument => instrument.family === this.family);
+    } else {
+      this.family = false;
+      this.instruments = INSTRUMENTS;
+    }
   }
 
-}
+  ngOnInit() {
+    this.renderInstruments();
+  }
+  
+
+  }

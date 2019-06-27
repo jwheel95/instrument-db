@@ -1,7 +1,11 @@
 <a routerLink="/instruments">All Instruments</a>
-<div>
-    <img src="{{ instrument.image }}" class="inst-image">
+<div class="individual-inst">
+    <div class="inst-column inst-image">
+        <img src="{{ instrument.image }}" class="inst-image">
+    </div>
+    <div class="inst-column">
+        <h1>{{ instrument.name }}</h1>
+        <p>Family: {{ instrument.family }}</p>
+        <p>First Invented: {{ instrument.invented }}</p>
+    </div>
 </div>
-<h1>{{ instrument.name }}</h1>
-<p>Family: {{ instrument.family }}</p>
-<p>First Invented: {{ instrument.invented }}</p>

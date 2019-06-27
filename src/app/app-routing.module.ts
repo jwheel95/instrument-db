@@ -6,7 +6,8 @@ import { IndividualInstrumentComponent } from './individual-instrument/individua
 const routes: Routes = [
   {path: '', redirectTo: 'instruments', pathMatch: 'full'},
   {path: 'instruments', component: InstrumentsComponent},
-  {path: 'instrument/:name', component: IndividualInstrumentComponent}
+  {path: 'instrument/:name', component: IndividualInstrumentComponent},
+  {path: '**', redirectTo: 'instruments', pathMatch: 'full'}
 ];
 
 @NgModule({

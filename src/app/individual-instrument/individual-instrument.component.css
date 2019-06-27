@@ -1,4 +1,14 @@
+.individual-inst {
+    display: flex;
+    justify-content: center;
+}
+
+.inst-column {
+    width:33%;
+    margin: 0;
+}
+
 .inst-image {
-    height: 30em;
-    width: 30em;
+    height: 40em;
+    width: 40em;
 }

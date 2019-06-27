@@ -1,7 +1,20 @@
 <div class="instruments">
-  <div class="inst" *ngFor="let instrument of instruments">
-    <img src="{{ instrument.image }}">
-    <h2>{{ instrument.name }}</h2>
-    <a routerLink="/instrument/{{ instrument.name }}">Details</a>
+  <h3>Sort by Family:</h3>
+  <div class="families">
+    <a class="filter" routerLink="/instruments"><button>All</button></a>
+    <a class="filter" routerLink="/instruments" [queryParams]="{ family : 'Woodwind' }"><button>Woodwind</button></a>
+    <a class="filter" routerLink="/instruments" [queryParams]="{ family : 'Brass' }"><button>Brass</button></a>
+    <a class="filter" routerLink="/instruments" [queryParams]="{ family : 'String' }"><button>String</button></a>
+    <a class="filter" routerLink="/instruments" [queryParams]="{ family : 'Percussion' }"><button>Percussion</button></a>
   </div>
+  <div class="families">
+      <button class="filter-btn" (click)="renderInstruments()">Filter</button>
+  </div>
+  <ng-container *ngFor="let instrument of instruments">
+    <div class="inst">
+      <img src="{{ instrument.image }}">
+      <h2>{{ instrument.name }}</h2>
+      <a routerLink="/instrument/{{ instrument.name }}"><button>Details</button></a>
+    </div>
+  </ng-container>
 </div>
