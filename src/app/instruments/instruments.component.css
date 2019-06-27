@@ -15,8 +15,12 @@
     text-decoration: none;
 }
 
-.filter-btn {
+.filter-submit {
     font-size: 1.2em;
+}
+
+.filter-btn {
+    width: 6em;
 }
 
 .inst {

@@ -55,4 +55,40 @@ export const INSTRUMENTS: InstrumentInterface[] = [
         family: 'String',
         invented: 'mid 1800s'
     },
+    {
+        name: 'Suspended Cymbal',
+        image: 'https://s3.amazonaws.com/images.static.steveweissmusic.com/products/images/uploads/1143416_46032_popup.jpg',
+        family: 'Percussion',
+        invented: '600s BC'
+    },
+    {
+        name: 'Tuba',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/518qsieAyjL._SX425_.jpg',
+        family: 'Brass',
+        invented: '1845'
+    },
+    {
+        name: 'Violin',
+        image: 'http://cdn.shopify.com/s/files/1/0091/1776/1602/products/damiano-violin-package-violins-violin-shack-full-size-263113_1200x1200.jpg?v=1556612580',
+        family: 'String',
+        invented: 'early 1500s'
+    },
+    {
+        name: 'Flute',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/41KjW18ytlL._SX425_.jpg',
+        family: 'Woodwind',
+        invented: 'at least 40,000BC (primitive)'
+    },
+    {
+        name: 'Snare',
+        image: 'https://media.guitarcenter.com/is/image/MMGS7/Supraphonic-Black-Beauty-Snare-Drum-6.5x14/446281000000488-00-290x290.jpg',
+        family: 'Percussion',
+        invented: '1200s'
+    },
+    {
+        name: 'Trombone',
+        image: 'https://d1aeri3ty3izns.cloudfront.net/media/28/287450/1200/preview.jpg',
+        family: 'Brass',
+        invented: '1500s'
+    },
 ];
